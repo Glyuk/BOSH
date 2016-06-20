@@ -1,0 +1,12 @@
+---
+name: apache2
+templates:
+  ctl.sh: bin/ctl
+  config.json: config/config.json
+
+packages:- apache2
+
+properties:
+  apache2.listen_port:
+    description: "Port to listen on"
+    default: 8080
